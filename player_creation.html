@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="playerCreation">
+        <h2>Player Creation</h2>
+        <p>Please use the form below to create a player</p>
+    </div>
+    <div class="playerForm">
+        <form action="mailto:rmoloney@tcd.ie" method="POST" enctype="text/plain">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br>
+            <label for="country">Country:</label><br>
+            <input type="text" id="country" name="country" value=""><br>
+            <br>
+            <label for="numOfCaps">Number of International Caps:</label><br>
+            <select id="caps" name="International Caps">
+                <option value="none">N/A</option>
+                <option value="under30">0 - 30</option>
+                <option value="under50">30-50</option>
+                <option value="under70">50-70</option>
+                <option value="under100">70-100</option>
+                <option value="legend">100+</option>
+            </select><br>
+            <br>
+            <label for="position1">Primary Position:</label><br>
+            <select id="positions" name="Positions1">
+                <option value="lprop">Loosehead Prop</option>
+                <option value="hooker">Hooker</option>
+                <option value="tprop">Tighthead Prop</option>
+                <option value="lock">Second Row</option>
+                <option value="bflanker">Blindside Flanker</option>
+                <option value="oflanker">Openside Flanker</option>
+                <option value="numbereight">Number Eight</option>
+                <option value="scrumhalf">Scrumhalf</option>
+                <option value="outhalf">Outhalf</option>
+                <option value="icentre">Inside Centre</option>
+                <option value="ocentre">Outside Centre</option>
+                <option value="wing">Wing</option>
+                <option value="fullback">Fullback</option>
+            </select><br>
+            <br>
+            <label for="position2">Secondary Position:</label><br>
+            <select id="secpositions" name="Positions2">
+                <option value="na">N/A</option>
+                <option value="lprop">Loosehead Prop</option>
+                <option value="hooker">Hooker</option>
+                <option value="tprop">Tighthead Prop</option>
+                <option value="lock">Second Row</option>
+                <option value="bflanker">Blindside Flanker</option>
+                <option value="oflanker">Openside Flanker</option>
+                <option value="numbereight">Number Eight</option>
+                <option value="scrumhalf">Scrumhalf</option>
+                <option value="outhalf">Outhalf</option>
+                <option value="icentre">Inside Centre</option>
+                <option value="ocentre">Outside Centre</option>
+                <option value="wing">Wing</option>
+                <option value="fullback">Fullback</option>
+            </select><br>
+            <br>
+            <label for="position3">Tertiary Position:</label><br>
+            <select id="thirdpositions" name="Positions3">
+                <option value="na">N/A</option>
+                <option value="lprop">Loosehead Prop</option>
+                <option value="hooker">Hooker</option>
+                <option value="tprop">Tighthead Prop</option>
+                <option value="lock">Second Row</option>
+                <option value="bflanker">Blindside Flanker</option>
+                <option value="oflanker">Openside Flanker</option>
+                <option value="numbereight">Number Eight</option>
+                <option value="scrumhalf">Scrumhalf</option>
+                <option value="outhalf">Outhalf</option>
+                <option value="icentre">Inside Centre</option>
+                <option value="ocentre">Outside Centre</option>
+                <option value="wing">Wing</option>
+                <option value="fullback">Fullback</option>
+            </select><br>
+            <br>
+            <!--Ratings Sliders-->
+            <!--Attack-->
+            <div class="slidecontainer">
+                <label for="attack">Attack:</label><br>
+                <input type="range" min="0" max="100" value="50" class="slider" id="attackRange" name="attackSlider">
+                <span id="attack"></span>
+              </div>
+            <br>
+            <!--Defence-->
+            <div class="slidecontainer">
+                <label for="defence">Defence:</label><br>
+                <input type="range" min="0" max="100" value="50" class="slider" id="defenceRange" name="defenceSlider">
+                <span id="defence"></span>
+              </div>
+            <br>
+            <!--Passing-->
+            <div class="slidecontainer">
+                <label for="passing">Passing:</label><br>
+                <input type="range" min="0" max="100" value="50" class="slider" id="passingRange" name="passingSlider">
+                <span id="passing"></span>
+              </div>
+            <br>
+            <!--Offloading-->
+            <div class="slidecontainer">
+                <label for="offloading">Offloading:</label><br>
+                <input type="range" min="0" max="100" value="50" class="slider" id="offloadingRange" name="offloadingSlider">
+                <span id="offloading"></span>
+              </div>
+            <br>
+            <!--Kicking-->
+            <div class="slidecontainer">
+                <label for="kicking">Kicking:</label><br>
+                <input type="range" min="0" max="100" value="50" class="slider" id="kickingRange" name="kickingSlider">
+                <span id="kicking"></span>
+              </div>
+            <br>
+            <!--Goal Kicking-->
+            <div class="slidecontainer">
+                <label for="goalkicking">Goal Kicking:</label><br>
+                <input type="range" min="0" max="100" value="50" class="slider" id="goalkickingRange" name="goalkickingSlider">
+                <span id="goalkicking"></span>
+              </div>
+            <br>
+            <!--Strength-->
+            <div class="slidecontainer">
+                <label for="strength">Strength:</label><br>
+                <input type="range" min="0" max="100" value="50" class="slider" id="strengthRange" name="strengthSlider">
+                <span id="strength"></span>
+              </div>
+            <br>
+            <!--Aggression-->
+            <div class="slidecontainer">
+                <label for="aggression">Aggression:</label><br>
+                <input type="range" min="0" max="100" value="50" class="slider" id="aggressionRange" name="aggressionSlider">
+                <span id="aggression"></span>
+              </div>
+            <br>
+            <!--Breakdown-->
+            <div class="slidecontainer">
+                <label for="breakdown">Breakdown:</label><br>
+                <input type="range" min="0" max="100" value="50" class="slider" id="breakdownRange" name="breakdownSlider">
+                <span id="breakdown"></span>
+              </div>
+            <br>
+            <!--Skill-->
+            <div class="slidecontainer">
+                <label for="skill">Skill:</label><br>
+                <input type="range" min="0" max="100" value="50" class="slider" id="skillRange" name="skillSlider">
+                <span id="skill"></span>
+              </div>
+            <br>
+            <!--Pace-->
+            <div class="slidecontainer">
+                <label for="pace">Pace:</label><br>
+                <input type="range" min="0" max="100" value="50" class="slider" id="paceRange" name="paceSlider">
+                <span id="pace"></span>
+              </div>
+            <br>
+            <!--Agility-->
+            <div class="slidecontainer">
+                <label for="agility">Agility:</label><br>
+                <input type="range" min="0" max="100" value="50" class="slider" id="agilityRange" name="agilitySlider">
+                <span id="agility"></span>
+              </div>
+            <br>
+            <!--Scrumaging-->
+            <div class="slidecontainer">
+                <label for="scrumaging">Scrumaging:</label><br>
+                <input type="range" min="0" max="100" value="50" class="slider" id="scrumagingRange" name="scrumagingSlider">
+                <span id="scrumaging"></span>
+              </div>
+            <br>
+            <!--Lineout-->
+            <div class="slidecontainer">
+                <label for="pace">Lineout:</label><br>
+                <input type="range" min="0" max="100" value="50" class="slider" id="lineoutRange" name="lineoutSlider"> 
+                <span id="lineout"></span>
+              </div>
+            <br>
+            <input class="button" type="submit" value="Create">
+          </form>
+    </div>
+</body>
+<script>
+    //Attack
+    var attackSlider = document.getElementById("attackRange");
+    var attackOutput = document.getElementById("attack");
+    attackOutput.innerHTML = attackSlider.value;
+    attackSlider.oninput = function() {
+      attackOutput.innerHTML = this.value;
+    }
+    //Defence
+    var defenceSlider = document.getElementById("defenceRange");
+    var defenceOutput = document.getElementById("defence");
+    defenceOutput.innerHTML = defenceSlider.value;
+    defenceSlider.oninput = function() {
+      defenceOutput.innerHTML = this.value;
+    }
+    //Passing
+    var passingSlider = document.getElementById("passingRange");
+    var passingOutput = document.getElementById("passing");
+    passingOutput.innerHTML = passingSlider.value;
+    passingSlider.oninput = function() {
+        passingOutput.innerHTML = this.value;
+    }
+    //Offloading
+    var offloadingSlider = document.getElementById("offloadingRange");
+    var offloadingOutput = document.getElementById("offloading");
+    offloadingOutput.innerHTML = offloadingSlider.value;
+    offloadingSlider.oninput = function() {
+        offloadingOutput.innerHTML = this.value;
+    }
+    //Kicking
+    var kickingSlider = document.getElementById("kickingRange");
+    var kickingOutput = document.getElementById("kicking");
+    kickingOutput.innerHTML = kickingSlider.value;
+    kickingSlider.oninput = function() {
+        kickingOutput.innerHTML = this.value;
+    }
+    //Goal Kicking
+    var goalkickingSlider = document.getElementById("goalkickingRange");
+    var goalkickingOutput = document.getElementById("goalkicking");
+    goalkickingOutput.innerHTML = goalkickingSlider.value;
+    goalkickingSlider.oninput = function() {
+        goalkickingOutput.innerHTML = this.value;
+    }
+    //Strength
+    var strengthSlider = document.getElementById("strengthRange");
+    var strengthOutput = document.getElementById("strength");
+    strengthOutput.innerHTML = strengthSlider.value;
+    strengthSlider.oninput = function() {
+        strengthOutput.innerHTML = this.value;
+    }
+    //Aggression
+    var aggressionSlider = document.getElementById("aggressionRange");
+    var aggressionOutput = document.getElementById("aggression");
+    aggressionOutput.innerHTML = aggressionSlider.value;
+    aggressionSlider.oninput = function() {
+        aggressionOutput.innerHTML = this.value;
+    }
+    //Breakdown
+    var breakdownSlider = document.getElementById("breakdownRange");
+    var breakdownOutput = document.getElementById("breakdown");
+    breakdownOutput.innerHTML = breakdownSlider.value;
+    breakdownSlider.oninput = function() {
+        breakdownOutput.innerHTML = this.value;
+    }
+    //Skill
+    var skillSlider = document.getElementById("skillRange");
+    var skillOutput = document.getElementById("skill");
+    skillOutput.innerHTML = skillSlider.value;
+    skillSlider.oninput = function() {
+        skillOutput.innerHTML = this.value;
+    }
+    //Pace
+    var paceSlider = document.getElementById("paceRange");
+    var paceOutput = document.getElementById("pace");
+    paceOutput.innerHTML = paceSlider.value;
+    paceSlider.oninput = function() {
+        paceOutput.innerHTML = this.value;
+    }
+    //Agility
+    var agilitySlider = document.getElementById("agilityRange");
+    var agilityOutput = document.getElementById("agility");
+    agilityOutput.innerHTML = agilitySlider.value;
+    agilitySlider.oninput = function() {
+        agilityOutput.innerHTML = this.value;
+    }
+    //Scrumaging
+    var scrumagingSlider = document.getElementById("scrumagingRange");
+    var scrumagingOutput = document.getElementById("scrumaging");
+    scrumagingOutput.innerHTML = scrumagingSlider.value;
+    scrumagingSlider.oninput = function() {
+        scrumagingOutput.innerHTML = this.value;
+    }
+    //Lineout
+    var lineoutSlider = document.getElementById("lineoutRange");
+    var lineoutOutput = document.getElementById("lineout");
+    lineoutOutput.innerHTML = lineoutSlider.value;
+    lineoutSlider.oninput = function() {
+        lineoutOutput.innerHTML = this.value;
+    }
+    </script>
+</html>
